@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+}
+
+
+
+.card {
+  background: var(--surface-card);
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.sidebar {
+  box-shadow: 0px 0px 13px -4px rgba(0, 0, 0, .15);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(216, 216, 216);
+  border-radius: 40px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.main-area {
+  box-shadow: 0px 0px 13px -4px rgba(0, 0, 0, .15);
+}
+
+
+
+.data-table-container>div:first-child>div:last-child {
+  min-height: 380px;
+}
+
+
+@media only screen and (max-width: 992px) {
+  .data-table-container {
+    width: 100%;
+    display: grid !important;
+
+  }
+}
