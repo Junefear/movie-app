@@ -2,11 +2,6 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { MovieService } from "../api/MovieService"
 
 
-// export const fetchMovies = createAsyncThunk("movies/fetchMovies", async () => {
-//   const response = await MovieService.get(`/movies`);
-//   return response.data;
-// });
-
 export const fetchMovies = createAsyncThunk("movies/fetchMovies", async () => {
   return new Promise((resolve) => {
     setTimeout(async () => {
