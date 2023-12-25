@@ -2,9 +2,7 @@ import { useEffect, useState } from 'react';
 
 import MovieForm from "../../components/MovieForm";
 import { useParams } from "react-router-dom";
-//import { useFormik } from "formik";
-//import Input from "../../components/form/Input";
-//import { mavieValidation } from "../../Validation/movieValidation";
+
 import axios from 'axios';
 
 
@@ -66,18 +64,3 @@ const Details = () => {
 export default Details;
 
 
-//<form >
-//{/* <Title addClass="text-[40px]">Account Settings</Title> */}
-//<div className="grid lg:grid-cols-2 grid-cols-1 gap-4 mt-4">
-//  {inputs.map((input) => (
-//   <Input
-//    key={input.id}
-//   {...input}
-//  {...movie}
-// onBlur={handleBlur}
-// onChange={handleChange}
-///>
-//))}
-//</div>
-//<button className="border border-green-600 text-green-700 py-2 px-3 mt-4">Update</button>
-//</form>
